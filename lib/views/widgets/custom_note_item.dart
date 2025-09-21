@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NotesItem extends StatelessWidget {
-  const NotesItem({super.key});
+  const NotesItem({super.key, required this.color});
 
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,7 +12,7 @@ class NotesItem extends StatelessWidget {
       // height: 20,
       // width: 50,
       decoration: BoxDecoration(
-        color: Color(0xffFFCD7A),
+        color: color,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
