@@ -14,6 +14,7 @@ class NotesListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: EdgeInsets.only(top: 15),
       itemBuilder: (context, index) {
         final color = itemcolors[index % itemcolors.length];
         return Padding(
